@@ -10,16 +10,12 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-xs-12">
-<div class="box box-default">
-<div class="box-header with-border">
-<h3 class="box-title">Publicaciones</h3>
-</div>
-<div class="box-body">
+<br>
+<br>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalasunto">
 Nuevo post
 </button><br>
 <div class="lista_post"></div><br>
-</div>
 </div>
 </div>
 </div>
@@ -48,7 +44,7 @@ Nuevo post
 <input class="form-control"  type="file" name="foto" id="foto" required=>
 </div>
 
-<input type="text" value="<?php echo $_SESSION['idusuarios']?>" name="idu" id="idu">
+<input type="hidden" value="<?php echo $_SESSION['idusuarios']?>" name="idu" id="idu">
 <div class="modal-footer">
 <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Cancelar</button>
 <button type="submit" class="btn btn-primary">Publicar</button>
